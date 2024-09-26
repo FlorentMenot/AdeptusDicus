@@ -1,0 +1,676 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="1" xml:space="preserve">
+    <value>A coward's only reward is to live in fear another day</value>
+  </data>
+  <data name="2" xml:space="preserve">
+    <value>A dagger in the dark is worth a thousand swords at dawn</value>
+  </data>
+  <data name="3" xml:space="preserve">
+    <value>A pity it is that we can die but once in the Emperor's service</value>
+  </data>
+  <data name="4" xml:space="preserve">
+    <value>A small mind is a tidy mind</value>
+  </data>
+  <data name="5" xml:space="preserve">
+    <value>A suspicious mind is a healthy mind</value>
+  </data>
+  <data name="6" xml:space="preserve">
+    <value>A swift execution is worth a hundred interrogations</value>
+  </data>
+  <data name="7" xml:space="preserve">
+    <value>Abhor the mutant</value>
+  </data>
+  <data name="8" xml:space="preserve">
+    <value>Abhor the Night, it is the Light that Endures</value>
+  </data>
+  <data name="9" xml:space="preserve">
+    <value>Abhor the xenos</value>
+  </data>
+  <data name="10" xml:space="preserve">
+    <value>Abhorrence is a gift; use it well</value>
+  </data>
+  <data name="11" xml:space="preserve">
+    <value>Aim without mercy</value>
+  </data>
+  <data name="12" xml:space="preserve">
+    <value>Aim true and strike deep</value>
+  </data>
+  <data name="13" xml:space="preserve">
+    <value>All mortal life is folly that does not feed the spirit</value>
+  </data>
+  <data name="14" xml:space="preserve">
+    <value>An informed opinion must be dismissed with the resolute certainty of faith</value>
+  </data>
+  <data name="15" xml:space="preserve">
+    <value>An open mind is like a fortress with its gates unbarred and unguarded</value>
+  </data>
+  <data name="16" xml:space="preserve">
+    <value>Arise for vengeance</value>
+  </data>
+  <data name="17" xml:space="preserve">
+    <value>Be not merciful</value>
+  </data>
+  <data name="18" xml:space="preserve">
+    <value>Be steadfast in defence</value>
+  </data>
+  <data name="19" xml:space="preserve">
+    <value>Be the Emperor's reaper</value>
+  </data>
+  <data name="20" xml:space="preserve">
+    <value>Be thou the scourge of traitors</value>
+  </data>
+  <data name="21" xml:space="preserve">
+    <value>Become righteousness made manifest</value>
+  </data>
+  <data name="22" xml:space="preserve">
+    <value>Become vengeance</value>
+  </data>
+  <data name="23" xml:space="preserve">
+    <value>Beware the corruption of men's souls</value>
+  </data>
+  <data name="24" xml:space="preserve">
+    <value>Beyond the Emperor's light lies only despair</value>
+  </data>
+  <data name="25" xml:space="preserve">
+    <value>Blessed are the intolerant</value>
+  </data>
+  <data name="26" xml:space="preserve">
+    <value>Blessed are the merciless</value>
+  </data>
+  <data name="27" xml:space="preserve">
+    <value>Blessed are they without introspection, for they shall know no doubt</value>
+  </data>
+  <data name="28" xml:space="preserve">
+    <value>Blessed be the slaughterer of heretics</value>
+  </data>
+  <data name="29" xml:space="preserve">
+    <value>Blessed be the subjugator</value>
+  </data>
+  <data name="30" xml:space="preserve">
+    <value>Blessed be the vengeful God, for He is the only true God</value>
+  </data>
+  <data name="31" xml:space="preserve">
+    <value>Blessed be the vengeful</value>
+  </data>
+  <data name="32" xml:space="preserve">
+    <value>Blessed is the mind too small for doubt</value>
+  </data>
+  <data name="33" xml:space="preserve">
+    <value>Blessed be thy aim</value>
+  </data>
+  <data name="34" xml:space="preserve">
+    <value>Blessed be thy fury</value>
+  </data>
+  <data name="35" xml:space="preserve">
+    <value>Blood for the Blood God! Skulls for the Skull Throne</value>
+  </data>
+  <data name="36" xml:space="preserve">
+    <value>By the way of their death shall we know them</value>
+  </data>
+  <data name="37" xml:space="preserve">
+    <value>By your scars and deeds shall you be judged</value>
+  </data>
+  <data name="38" xml:space="preserve">
+    <value>Carry the Will of the Emperor like a torch in the darkness</value>
+  </data>
+  <data name="39" xml:space="preserve">
+    <value>Carry your scars with honour</value>
+  </data>
+  <data name="40" xml:space="preserve">
+    <value>Cleanse the mutant; burn the heretic; purge the xenos</value>
+  </data>
+  <data name="41" xml:space="preserve">
+    <value>Cleave to the Emperor's light</value>
+  </data>
+  <data name="42" xml:space="preserve">
+    <value>Complaining of thy lot is the first step on the Road to Damnation</value>
+  </data>
+  <data name="43" xml:space="preserve">
+    <value>Condemn the damned to their reward</value>
+  </data>
+  <data name="44" xml:space="preserve">
+    <value>Courage is the Emperor's gift</value>
+  </data>
+  <data name="45" xml:space="preserve">
+    <value>Curse the traitor, condemn the weak</value>
+  </data>
+  <data name="46" xml:space="preserve">
+    <value>Death brings peace to the unfaithful</value>
+  </data>
+  <data name="47" xml:space="preserve">
+    <value>Despise the weak, for they shall flock to the call of the renegade</value>
+  </data>
+  <data name="48" xml:space="preserve">
+    <value>Destroy the corruption wherever it is found</value>
+  </data>
+  <data name="49" xml:space="preserve">
+    <value>Do not shy the hopeless fight, for endeavour is its own reward</value>
+  </data>
+  <data name="50" xml:space="preserve">
+    <value>Doubt not the Emperor's wrath</value>
+  </data>
+  <data name="51" xml:space="preserve">
+    <value>Doubt not thy strength whilst faith prevails</value>
+  </data>
+  <data name="52" xml:space="preserve">
+    <value>Duty demands sacrifice</value>
+  </data>
+  <data name="53" xml:space="preserve">
+    <value>Duty first, duty last</value>
+  </data>
+  <data name="54" xml:space="preserve">
+    <value>Duty is vital, understanding is not</value>
+  </data>
+  <data name="55" xml:space="preserve">
+    <value>Emperor guide thy aim</value>
+  </data>
+  <data name="56" xml:space="preserve">
+    <value>Endure the present, so those who follow may continue your endeavours</value>
+  </data>
+  <data name="57" xml:space="preserve">
+    <value>Even the greatest hero is but a ripple on the surface of space</value>
+  </data>
+  <data name="58" xml:space="preserve">
+    <value>Exist for the Emperor</value>
+  </data>
+  <data name="59" xml:space="preserve">
+    <value>Facts are chains that bind perception and fetter truth</value>
+  </data>
+  <data name="60" xml:space="preserve">
+    <value>Faith conquers all</value>
+  </data>
+  <data name="61" xml:space="preserve">
+    <value>Faith needs no excuse</value>
+  </data>
+  <data name="62" xml:space="preserve">
+    <value>Fear not obliteration, for it awaits us all</value>
+  </data>
+  <data name="63" xml:space="preserve">
+    <value>Fear the wrath of the righteous</value>
+  </data>
+  <data name="64" xml:space="preserve">
+    <value>Foolish are those who fear nothing, yet claim to know everything</value>
+  </data>
+  <data name="65" xml:space="preserve">
+    <value>For every enemy without, there are a hundred within</value>
+  </data>
+  <data name="66" xml:space="preserve">
+    <value>Forget not; forgive nothing</value>
+  </data>
+  <data name="67" xml:space="preserve">
+    <value>Forgiveness is a crime punishable by death</value>
+  </data>
+  <data name="68" xml:space="preserve">
+    <value>Forgiveness is punishable by death</value>
+  </data>
+  <data name="69" xml:space="preserve">
+    <value>From duty and death there can be no respite</value>
+  </data>
+  <data name="70" xml:space="preserve">
+    <value>Gird thyself with the Emperor's light</value>
+  </data>
+  <data name="71" xml:space="preserve">
+    <value>Guard Humanity; fear the Enemy Beyond</value>
+  </data>
+  <data name="72" xml:space="preserve">
+    <value>Guard thy soul against disorder</value>
+  </data>
+  <data name="73" xml:space="preserve">
+    <value>Happiness is a delusion of the Weak</value>
+  </data>
+  <data name="74" xml:space="preserve">
+    <value>Hasten the damned to their reward</value>
+  </data>
+  <data name="75" xml:space="preserve">
+    <value>He knows what lies in the darkness, and fears it not</value>
+  </data>
+  <data name="76" xml:space="preserve">
+    <value>Heed not the whispers of the faithless</value>
+  </data>
+  <data name="77" xml:space="preserve">
+    <value>Heed the Word of the Emperor</value>
+  </data>
+  <data name="78" xml:space="preserve">
+    <value>Here be the doom of mutants</value>
+  </data>
+  <data name="79" xml:space="preserve">
+    <value>Here endeth thy lesson</value>
+  </data>
+  <data name="80" xml:space="preserve">
+    <value>Honour the craft of death</value>
+  </data>
+  <data name="81" xml:space="preserve">
+    <value>Honour thy Emperor</value>
+  </data>
+  <data name="82" xml:space="preserve">
+    <value>Honour thy oaths, honour thy Emperor</value>
+  </data>
+  <data name="83" xml:space="preserve">
+    <value>Honour thy regiment</value>
+  </data>
+  <data name="84" xml:space="preserve">
+    <value>Honour thy weapon</value>
+  </data>
+  <data name="85" xml:space="preserve">
+    <value>Honour your duty</value>
+  </data>
+  <data name="86" xml:space="preserve">
+    <value>Honour, duty and obedience</value>
+  </data>
+  <data name="87" xml:space="preserve">
+    <value>Hope is superfluous</value>
+  </data>
+  <data name="88" xml:space="preserve">
+    <value>Hope is the first step on the road to disappointment</value>
+  </data>
+  <data name="89" xml:space="preserve">
+    <value>I bringeth death</value>
+  </data>
+  <data name="90" xml:space="preserve">
+    <value>I speak with tongues of flame</value>
+  </data>
+  <data name="91" xml:space="preserve">
+    <value>If you see no signs of sedition, you aren't looking hard enough</value>
+  </data>
+  <data name="92" xml:space="preserve">
+    <value>Ignorance is thy best defence</value>
+  </data>
+  <data name="93" xml:space="preserve">
+    <value>Imperialis Dominatus</value>
+  </data>
+  <data name="94" xml:space="preserve">
+    <value>Impurity of deed or thought is treason</value>
+  </data>
+  <data name="95" xml:space="preserve">
+    <value>In Terra's light we serve</value>
+  </data>
+  <data name="96" xml:space="preserve">
+    <value>Innocence proves nothing</value>
+  </data>
+  <data name="97" xml:space="preserve">
+    <value>Intolerance is a blessing</value>
+  </data>
+  <data name="98" xml:space="preserve">
+    <value>It is an honour to bleed for the Emperor</value>
+  </data>
+  <data name="99" xml:space="preserve">
+    <value>Justice allows no doubt</value>
+  </data>
+  <data name="100" xml:space="preserve">
+    <value>Keep the faith, kill the foe</value>
+  </data>
+  <data name="101" xml:space="preserve">
+    <value>Kill the heretic with fervour</value>
+  </data>
+  <data name="102" xml:space="preserve">
+    <value>Knowledge brings us closer to annihilation</value>
+  </data>
+  <data name="103" xml:space="preserve">
+    <value>Knowledge is power, guard it well</value>
+  </data>
+  <data name="104" xml:space="preserve">
+    <value>Lack of faith is tantamount to treason</value>
+  </data>
+  <data name="105" xml:space="preserve">
+    <value>Let faith trample reason</value>
+  </data>
+  <data name="106" xml:space="preserve">
+    <value>Let no foe stand before you</value>
+  </data>
+  <data name="107" xml:space="preserve">
+    <value>Let not thy hate be conquered by fear</value>
+  </data>
+  <data name="108" xml:space="preserve">
+    <value>Let thy weapon be zeal, and thy armour contempt</value>
+  </data>
+  <data name="109" xml:space="preserve">
+    <value>Life is fleeting; duty is eternal</value>
+  </data>
+  <data name="110" xml:space="preserve">
+    <value>Life is measured not in years, but by the deeds of the faithful</value>
+  </data>
+  <data name="111" xml:space="preserve">
+    <value>Life is the Emperor's currency, spend it well</value>
+  </data>
+  <data name="112" xml:space="preserve">
+    <value>Mankind stands upon the shoulders of the martyred</value>
+  </data>
+  <data name="113" xml:space="preserve">
+    <value>Mercy is a disease; intolerance is the cure</value>
+  </data>
+  <data name="114" xml:space="preserve">
+    <value>Narrow minds are faithful minds</value>
+  </data>
+  <data name="115" xml:space="preserve">
+    <value>Night descends, yet still the Emperor's light shows the way</value>
+  </data>
+  <data name="116" xml:space="preserve">
+    <value>No man died in the Emperor's service that died in vain</value>
+  </data>
+  <data name="117" xml:space="preserve">
+    <value>Only in death does duty end</value>
+  </data>
+  <data name="118" xml:space="preserve">
+    <value>Only the coward seeks compromise</value>
+  </data>
+  <data name="119" xml:space="preserve">
+    <value>Pass judgement without mercy</value>
+  </data>
+  <data name="120" xml:space="preserve">
+    <value>Persecute, punish, persist</value>
+  </data>
+  <data name="121" xml:space="preserve">
+    <value>Praise be the Emperor, who teaches us the ways of war</value>
+  </data>
+  <data name="122" xml:space="preserve">
+    <value>Praise the Emperor</value>
+  </data>
+  <data name="123" xml:space="preserve">
+    <value>++REDACTED BY ORDER OF THE INQUISITION++</value>
+  </data>
+  <data name="124" xml:space="preserve">
+    <value>Reject peace for the lie that it is</value>
+  </data>
+  <data name="125" xml:space="preserve">
+    <value>Rejoice in repentance</value>
+  </data>
+  <data name="126" xml:space="preserve">
+    <value>Rejoice in thy service</value>
+  </data>
+  <data name="127" xml:space="preserve">
+    <value>Retribution is your birthright</value>
+  </data>
+  <data name="128" xml:space="preserve">
+    <value>Scourge the stars in the Emperor's name</value>
+  </data>
+  <data name="129" xml:space="preserve">
+    <value>Seek for yourself a death worthy of remembrance</value>
+  </data>
+  <data name="130" xml:space="preserve">
+    <value>Slay the impure and sanctify the faithful</value>
+  </data>
+  <data name="131" xml:space="preserve">
+    <value>Smite all who oppose the Emperor</value>
+  </data>
+  <data name="132" xml:space="preserve">
+    <value>Smite all who would besmirch the Emperor's name</value>
+  </data>
+  <data name="133" xml:space="preserve">
+    <value>Speak not the names of traitors</value>
+  </data>
+  <data name="134" xml:space="preserve">
+    <value>Suffer no impurity</value>
+  </data>
+  <data name="135" xml:space="preserve">
+    <value>The difference between heresy and treachery is ignorance</value>
+  </data>
+  <data name="136" xml:space="preserve">
+    <value>The Emperor bears the weight of Mankind's ills</value>
+  </data>
+  <data name="137" xml:space="preserve">
+    <value>The Emperor bestows upon us the gift of intolerance</value>
+  </data>
+  <data name="138" xml:space="preserve">
+    <value>The Emperor commands, the Astra Militarum obeys</value>
+  </data>
+  <data name="139" xml:space="preserve">
+    <value>The Emperor is all</value>
+  </data>
+  <data name="140" xml:space="preserve">
+    <value>The Emperor knows, the Emperor is watching</value>
+  </data>
+  <data name="141" xml:space="preserve">
+    <value>The Emperor protects</value>
+  </data>
+  <data name="142" xml:space="preserve">
+    <value>The Emperor's justice is a beautiful thing</value>
+  </data>
+  <data name="143" xml:space="preserve">
+    <value>The guilt of heresy weighs heavy on the soul</value>
+  </data>
+  <data name="144" xml:space="preserve">
+    <value>The Imperium of Mankind shall never yield</value>
+  </data>
+  <data name="145" xml:space="preserve">
+    <value>The mutant is guileful, trust it not</value>
+  </data>
+  <data name="146" xml:space="preserve">
+    <value>The price of duty is high, but the rewards are eternal</value>
+  </data>
+  <data name="147" xml:space="preserve">
+    <value>The righteous fear naught</value>
+  </data>
+  <data name="148" xml:space="preserve">
+    <value>The same hammer that shatters the glass, forges the steel</value>
+  </data>
+  <data name="149" xml:space="preserve">
+    <value>The seeds of heresy are planted in the minds of the enlightened</value>
+  </data>
+  <data name="150" xml:space="preserve">
+    <value>The shield of faith is your best protection</value>
+  </data>
+  <data name="151" xml:space="preserve">
+    <value>The traitor shall burn</value>
+  </data>
+  <data name="152" xml:space="preserve">
+    <value>The traitor's hand lies closer than you think</value>
+  </data>
+  <data name="153" xml:space="preserve">
+    <value>The truth is terrible to bear</value>
+  </data>
+  <data name="154" xml:space="preserve">
+    <value>The victor lives in honour; the vanquished dies in shame</value>
+  </data>
+  <data name="155" xml:space="preserve">
+    <value>The wage of negligence is utter destruction</value>
+  </data>
+  <data name="156" xml:space="preserve">
+    <value>The weak shall be purged, the strong shall endure</value>
+  </data>
+  <data name="157" xml:space="preserve">
+    <value>The Will of the Emperor is the might of the Imperium</value>
+  </data>
+  <data name="158" xml:space="preserve">
+    <value>The wise have much to fear; the ignorant are blessed with courage</value>
+  </data>
+  <data name="159" xml:space="preserve">
+    <value>The wise learn from the deaths of others</value>
+  </data>
+  <data name="160" xml:space="preserve">
+    <value>There are no walls strong enough to protect the enemies of Mankind</value>
+  </data>
+  <data name="161" xml:space="preserve">
+    <value>There is no being so foul as the traitor</value>
+  </data>
+  <data name="162" xml:space="preserve">
+    <value>There is no fear in conviction</value>
+  </data>
+  <data name="163" xml:space="preserve">
+    <value>There is no future without the Emperor's blessing</value>
+  </data>
+  <data name="164" xml:space="preserve">
+    <value>There is only the Emperor</value>
+  </data>
+  <data name="165" xml:space="preserve">
+    <value>There is purity of purpose in the faith of the just</value>
+  </data>
+  <data name="166" xml:space="preserve">
+    <value>Thou art the hammer of the Emperor</value>
+  </data>
+  <data name="167" xml:space="preserve">
+    <value>Thou shalt be remembered by thy deeds</value>
+  </data>
+  <data name="168" xml:space="preserve">
+    <value>Thou shalt kill</value>
+  </data>
+  <data name="169" xml:space="preserve">
+    <value>Thou shalt not yield</value>
+  </data>
+  <data name="170" xml:space="preserve">
+    <value>Thy hand is justice</value>
+  </data>
+  <data name="171" xml:space="preserve">
+    <value>Timidity begets indecision; indecision begets treachery</value>
+  </data>
+  <data name="172" xml:space="preserve">
+    <value>To err is to invite retribution</value>
+  </data>
+  <data name="173" xml:space="preserve">
+    <value>To relinquish contempt is capitulation</value>
+  </data>
+  <data name="174" xml:space="preserve">
+    <value>To spare the traitor is to invite corruption</value>
+  </data>
+  <data name="175" xml:space="preserve">
+    <value>To question is to doubt</value>
+  </data>
+  <data name="176" xml:space="preserve">
+    <value>To question your master is to betray the Emperor</value>
+  </data>
+  <data name="177" xml:space="preserve">
+    <value>To withdraw in disgust is not apathy</value>
+  </data>
+  <data name="178" xml:space="preserve">
+    <value>Tolerance begets heresy</value>
+  </data>
+  <data name="179" xml:space="preserve">
+    <value>True faith is blind and justified</value>
+  </data>
+  <data name="180" xml:space="preserve">
+    <value>True wisdom is acceptance of the inevitable</value>
+  </data>
+  <data name="181" xml:space="preserve">
+    <value>Trust only the Emperor</value>
+  </data>
+  <data name="182" xml:space="preserve">
+    <value>Truth begets hatred</value>
+  </data>
+  <data name="183" xml:space="preserve">
+    <value>Understanding weakens the will to act</value>
+  </data>
+  <data name="184" xml:space="preserve">
+    <value>Victory belongs to the Emperor</value>
+  </data>
+  <data name="185" xml:space="preserve">
+    <value>Victory needs no explanation; defeat allows none</value>
+  </data>
+  <data name="186" xml:space="preserve">
+    <value>War calls: will you answer?</value>
+  </data>
+  <data name="187" xml:space="preserve">
+    <value>Weigh the fist that strikes men down and salutes the battle won</value>
+  </data>
+  <data name="188" xml:space="preserve">
+    <value>Welcome the judgement of the Emperor</value>
+  </data>
+  <data name="189" xml:space="preserve">
+    <value>Without fear or falter, do thy duty</value>
+  </data>
+  <data name="190" xml:space="preserve">
+    <value>Withstand the winds of chaos, for the Emperor's light shines through</value>
+  </data>
+  <data name="191" xml:space="preserve">
+    <value>You need understand nothing to do your duty</value>
+  </data>
+  <data name="192" xml:space="preserve">
+    <value>Your honor is your life. Let none dispute it</value>
+  </data>
+</root>

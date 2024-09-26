@@ -1,4 +1,5 @@
 ﻿using Discord.Interactions;
+using System.Security.Cryptography;
 
 namespace AdeptusDicus.Modules
 {
@@ -200,10 +201,10 @@ namespace AdeptusDicus.Modules
                 { 192, "Ton honneur est ta vie.Que nul ne le conteste." }
             };
 
-        [SlashCommand("quote", "A quote from WarHammer40k: Dark Tide")]
-        public async Task QuoteAsync() 
+        [SlashCommand("quote", "Citation de WarHammer40k : Dark Tide")]
+        public async Task QuoteAsync()
         {
-            var index = Random.Shared.Next(0, _quotes.Count);
+            var index = RandomNumberGenerator.GetInt32(0, _quotes.Count);
             await RespondAsync(_quotes[index]);
         }
         

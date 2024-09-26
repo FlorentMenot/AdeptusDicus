@@ -97,6 +97,10 @@
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
               "version": "[8.0.0, )"
+            },
+            "StringMath": {
+              "target": "Package",
+              "version": "[4.1.2, )"
             }
           },
           "imports": [

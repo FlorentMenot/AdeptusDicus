@@ -20,6 +20,7 @@
     <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="8.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="8.0.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="StringMath" Version="4.1.2" />
   </ItemGroup>
 
   <ItemGroup>
@@ -28,12 +29,21 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>CommandLocales.resx</DependentUpon>
     </Compile>
+    <Compile Update="Resources\Quotes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Quotes.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Update="Resources\CommandLocales.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>CommandLocales.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Quotes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Quotes.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
 

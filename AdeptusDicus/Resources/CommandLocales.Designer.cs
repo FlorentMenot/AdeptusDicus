@@ -59,5 +59,23 @@ namespace AdeptusDicus.Resources {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à A quote from WarHammer40k: Dark Tide.
+        /// </summary>
+        internal static string quote {
+            get {
+                return ResourceManager.GetString("quote", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Roll a dice.
+        /// </summary>
+        internal static string roll {
+            get {
+                return ResourceManager.GetString("roll", resourceCulture);
+            }
+        }
     }
 }

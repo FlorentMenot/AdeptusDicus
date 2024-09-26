@@ -1,8 +1,10 @@
-﻿using Discord;
+﻿using System.Globalization;
+using Discord;
 using Discord.Interactions;
 using Discord.WebSocket;
 using Microsoft.Extensions.Configuration;
 using System.Reflection;
+using System.Resources;
 using IResult = Discord.Interactions.IResult;
 
 namespace InteractionFramework;

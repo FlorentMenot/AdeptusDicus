@@ -9,8 +9,8 @@ namespace AdeptusDicus.Modules
 {
     public class CommonModule : InteractionModuleBase<SocketInteractionContext>
     {
-        [SlashCommand("ping", "Pings the bot and returns its latency.")]
+        [SlashCommand("ping", "Ping le bot et affiche la latence")]
         public async Task GreetUserAsync()
-            => await RespondAsync(text: $":ping_pong: It took me {Context.Client.Latency}ms to respond to you!", ephemeral: false);
+            => await RespondAsync(text: $":ping_pong: Cela m'a pris {Context.Client.Latency}ms à vous répondre!", ephemeral: false);
     }
 }

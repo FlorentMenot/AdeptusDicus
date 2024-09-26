@@ -39,3 +39,10 @@ C:\Git\Adeptus_Dicus\AdeptusDicus\obj\Debug\net8.0\refint\AdeptusDicus.dll
 C:\Git\Adeptus_Dicus\AdeptusDicus\obj\Debug\net8.0\AdeptusDicus.pdb
 C:\Git\Adeptus_Dicus\AdeptusDicus\obj\Debug\net8.0\AdeptusDicus.genruntimeconfig.cache
 C:\Git\Adeptus_Dicus\AdeptusDicus\obj\Debug\net8.0\ref\AdeptusDicus.dll
+C:\Git\Adeptus_Dicus\AdeptusDicus\obj\Debug\net8.0\AdeptusDicus.sourcelink.json
+C:\Git\Adeptus_Dicus\AdeptusDicus\bin\Debug\net8.0\fr-FR\AdeptusDicus.resources.dll
+C:\Git\Adeptus_Dicus\AdeptusDicus\obj\Debug\net8.0\AdeptusDicus.Resources.Quotes.resources
+C:\Git\Adeptus_Dicus\AdeptusDicus\obj\Debug\net8.0\AdeptusDicus.Resources.CommandLocales.fr-FR.resources
+C:\Git\Adeptus_Dicus\AdeptusDicus\obj\Debug\net8.0\AdeptusDicus.Resources.Quotes.fr-FR.resources
+C:\Git\Adeptus_Dicus\AdeptusDicus\obj\Debug\net8.0\fr-FR\AdeptusDicus.resources.dll
+C:\Git\Adeptus_Dicus\AdeptusDicus\bin\Debug\net8.0\StringMath.dll
