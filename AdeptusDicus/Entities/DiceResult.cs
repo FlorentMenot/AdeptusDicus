@@ -12,5 +12,9 @@ namespace AdeptusDicus.Entities
         public string TextResult { get; set; } = string.Empty;
 
         public Color ColorResult { get; set; }
+
+        public Result Result { get; set; }
+
+        public bool IsCritical { get; set; }
     }
 }

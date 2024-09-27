@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AdeptusDicus")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dac2540c55ce154fcafbf6cfc16cdfcb08516601")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f43e806fcf23f54608659878b318904a4dc19b58")]
 [assembly: System.Reflection.AssemblyProductAttribute("AdeptusDicus")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AdeptusDicus")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

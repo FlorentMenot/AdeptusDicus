@@ -13,11 +13,46 @@ namespace AdeptusDicus.Modules
         public async Task RollCommandAsync(RollType rollType = RollType.Classic, int difficulté = -1, int valeur = -1, string description = "")
         {
             var diceResult = GetResult(rollType, difficulté, valeur, description);
+            string title = GetTitle(diceResult);
             var embedBuilder = new EmbedBuilder()
+                .WithTitle(title)
                 .WithDescription(diceResult.TextResult)
                 .WithColor(diceResult.ColorResult);
 
             await RespondAsync($"{Context.Interaction.User.Mention}", embed: embedBuilder.Build());
+        }
+
+        private string GetTitle(DiceResult diceResult)
+        {
+            if (diceResult.IsCritical)
+            {
+                if (diceResult.Result == Result.Undetermined)
+                {
+                    return "***Critique***";
+                }
+
+                if (diceResult.Result == Result.Failure)
+                {
+                    return "***Échec critique !!***";
+                }
+
+                if (diceResult.Result == Result.Success)
+                {
+                    return "***Succès critique !!***";
+                }
+            }
+
+            if (diceResult.Result == Result.Success)
+            {
+                return "**Succès**";
+            }
+
+            if (diceResult.Result == Result.Failure)
+            {
+                return "**Échec**";
+            }
+
+            return "**Résultat**";
         }
 
         [SlashCommand("r", "Jet de dé libre")]
@@ -65,6 +100,8 @@ namespace AdeptusDicus.Modules
         {
             var result = new DiceResult();
             result.ColorResult = Color.Blue;
+            result.IsCritical = false;
+            result.Result = Result.Undetermined;
             var diceResult = DiceHelper.D100();
             var sb = new StringBuilder();
             sb.AppendLine($"Jet : {diceResult}");
@@ -91,7 +128,7 @@ namespace AdeptusDicus.Modules
 
             if (!string.IsNullOrWhiteSpace(description))
             {
-                sb.AppendLine($"***{description}***");
+                sb.AppendLine($"*{description}*");
             }
             var decomposition = DecomposeInt32(diceResult);
             if (rollType == RollType.Advantage && decomposition.Ten > decomposition.Unit)
@@ -107,20 +144,21 @@ namespace AdeptusDicus.Modules
             }
 
             bool isCritical = CheckCritical(decomposition);
-
+            result.IsCritical = isCritical;
             if (isCritical && diceResult < 90 && threshold == -1)
             {
-                sb.AppendLine("Et c'est un critique !!!");
                 result.ColorResult = Color.Gold;
             }
 
             if (diceResult < 6)
             {
                 result.ColorResult = Color.Green;
+                result.Result = Result.Success;
                 sb.AppendLine("Un jet de dès entre 01 et 05 est toujours un succès !");
             }
             else if (diceResult > 95)
             {
+                result.Result = Result.Failure;
                 result.ColorResult = isCritical ? Color.DarkRed : Color.Red;
                 sb.AppendLine(isCritical
                     ? $"Oh oh ! {diceResult} est un fumble automatique !"
@@ -142,6 +180,7 @@ namespace AdeptusDicus.Modules
                     string resultString = string.Empty;
                     if (diceResult <= threshold)
                     {
+                        result.Result = Result.Success;
                         var success = DecomposeInt32(threshold-diceResult);
                         int sl = success.Ten;
                         result.ColorResult = isCritical ? Color.DarkGreen : Color.Green;
@@ -170,6 +209,7 @@ namespace AdeptusDicus.Modules
                     }
                     else
                     {
+                        result.Result = Result.Failure;
                         var fail = DecomposeInt32(diceResult-threshold);
                         int sl = fail.Ten;
                         result.ColorResult = isCritical ? Color.DarkRed : Color.Red;
