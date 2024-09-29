@@ -520,6 +520,33 @@
         "runtime": {
           "lib/netcoreapp2.0/_._": {}
         }
+      },
+      "Referentiel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Discord.Net": "3.16.0",
+          "Shared": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Referentiel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Referentiel.dll": {}
+        }
+      },
+      "Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Discord.Net": "3.16.0"
+        },
+        "compile": {
+          "bin/placeholder/Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.dll": {}
+        }
       }
     }
   },
@@ -1402,6 +1429,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Referentiel/1.0.0": {
+      "type": "project",
+      "path": "../Referentiel/Referentiel.csproj",
+      "msbuildProject": "../Referentiel/Referentiel.csproj"
+    },
+    "Shared/1.0.0": {
+      "type": "project",
+      "path": "../Shared/Shared.csproj",
+      "msbuildProject": "../Shared/Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1418,27 +1455,29 @@
       "Microsoft.Extensions.Configuration.EnvironmentVariables >= 8.0.0",
       "Microsoft.Extensions.Configuration.Json >= 8.0.0",
       "Microsoft.Extensions.DependencyInjection >= 8.0.0",
+      "Referentiel >= 1.0.0",
+      "Shared >= 1.0.0",
       "StringMath >= 4.1.2"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\florent.menot\\.nuget\\packages\\": {},
+    "C:\\Users\\lostd\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Git\\Adeptus_Dicus\\AdeptusDicus\\AdeptusDicus.csproj",
+      "projectUniqueName": "D:\\Git\\AdeptusDicus\\AdeptusDicus\\AdeptusDicus.csproj",
       "projectName": "AdeptusDicus",
-      "projectPath": "C:\\Git\\Adeptus_Dicus\\AdeptusDicus\\AdeptusDicus.csproj",
-      "packagesPath": "C:\\Users\\florent.menot\\.nuget\\packages\\",
-      "outputPath": "C:\\Git\\Adeptus_Dicus\\AdeptusDicus\\obj\\",
+      "projectPath": "D:\\Git\\AdeptusDicus\\AdeptusDicus\\AdeptusDicus.csproj",
+      "packagesPath": "C:\\Users\\lostd\\.nuget\\packages\\",
+      "outputPath": "D:\\Git\\AdeptusDicus\\AdeptusDicus\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\florent.menot\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\lostd\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1446,14 +1485,21 @@
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
-        "C:\\Users\\florent.menot\\Documents\\Infragistics\\NuGet\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Git\\AdeptusDicus\\Referentiel\\Referentiel.csproj": {
+              "projectPath": "D:\\Git\\AdeptusDicus\\Referentiel\\Referentiel.csproj"
+            },
+            "D:\\Git\\AdeptusDicus\\Shared\\Shared.csproj": {
+              "projectPath": "D:\\Git\\AdeptusDicus\\Shared\\Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

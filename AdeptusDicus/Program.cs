@@ -7,6 +7,8 @@ using Discord.WebSocket;
 using InteractionFramework;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Referentiel;
+using Shared.IReferentiel;
 
 namespace AdeptusDicus;
 
@@ -34,13 +36,16 @@ public class Program
             .AddJsonFile("appsettings.json", optional: true)
             .Build();
 
-        _services = new ServiceCollection()
+        var collection = new ServiceCollection()
             .AddSingleton(_configuration)
             .AddSingleton(SocketConfig)
             .AddSingleton<DiscordSocketClient>()
             .AddSingleton(x => new InteractionService(x.GetRequiredService<DiscordSocketClient>(), InteractionServiceConfig))
-            .AddSingleton<InteractionHandler>()
-            .BuildServiceProvider();
+            .AddSingleton<InteractionHandler>();
+
+        Services.AddReferentielServices(collection);
+
+        _services = collection.BuildServiceProvider();
 
         var client = _services.GetRequiredService<DiscordSocketClient>();
 

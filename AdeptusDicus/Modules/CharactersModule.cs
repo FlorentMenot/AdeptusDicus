@@ -8,46 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using AdeptusDicus.Entities;
 using Discord;
+using Shared.Base;
+using Microsoft.Extensions.DependencyInjection;
+using Shared.IReferentiel;
+using Shared.Entities;
 
 namespace AdeptusDicus.Modules
 {
     public class CharactersModule : InteractionModuleBase<SocketInteractionContext>
     {
-        private readonly Dictionary<Origin, string> _originsTranslations = new()
-        {
-            { Origin.AgriWorld, "Monde agricole" },
-            { Origin.FeudalWorld, "Monde féodal" },
-            { Origin.FeralWorld, "Monde sauvage" },
-            { Origin.ForgeWorld, "Monde forge" },
-            { Origin.HiveWorld, "Monde ruche" },
-            { Origin.ShrineWorld, "Monde tombeau" },
-            { Origin.ScholaProgenium, "ScholaProgenium" },
-            { Origin.Voidborn, "Né dans le vide" }
-        };
+        private readonly IOriginReferentiel _originService;
 
-        private readonly Dictionary<Origin, string> _originsBonus = new()
+        public CharactersModule(IServiceProvider serviceProvider)
         {
-            { Origin.AgriWorld, "+5 Force et +5 Agilité, Endurance ou Volonté" },
-            { Origin.FeudalWorld, "+5 CC et +5 Communauté, Force ou Volonté" },
-            { Origin.FeralWorld, "+5 Endurance et +5 CC, Force ou Perception" },
-            { Origin.ForgeWorld, "+5 Intelligence et +5 Agilité, CT ou Endurance" },
-            { Origin.HiveWorld, "+5 Agilité et +5 Communauté, CT ou Perception" },
-            { Origin.ShrineWorld, "+5 Volonté et +5 Communauté, Intelligence ou Perception" },
-            { Origin.ScholaProgenium, "+5 Communauté et +5 CC, CT ou endurance" },
-            { Origin.Voidborn, "+5 Perception et +5 Agilité, Intelligence ou Volonté" }
-        };
-
-        private readonly Dictionary<Origin, string> _originsEquipement = new()
-        {
-            { Origin.AgriWorld, "Outils de forage de piète qualité" },
-            { Origin.FeudalWorld, "Outils d'écriture de piètre qualité" },
-            { Origin.FeralWorld, "Équipements de survie de piètre qualité" },
-            { Origin.ForgeWorld, "Fiole d'Onguents Sacrés" },
-            { Origin.HiveWorld, "Bouchons filtrants laids" },
-            { Origin.ShrineWorld, "Sainte Icône" },
-            { Origin.ScholaProgenium, "Chrono" },
-            { Origin.Voidborn, "Bottes magnétiques de piètre qualité" }
-        };
+            _originService = serviceProvider.GetRequiredService<IOriginReferentiel>();
+        }
 
         private readonly Dictionary<Faction, string> _factionsTranslation = new()
         {
@@ -111,6 +86,7 @@ namespace AdeptusDicus.Modules
         [SlashCommand("def-carac", "Obtient la correspondance entre En -> Fr ")]
         private async Task TranslateCaracteristics()
         {
+
             var sb = new StringBuilder();
             sb.AppendLine("WS - Weapon Skill → Capacité de Combat (CC)");
             sb.AppendLine("BS - Ballistic Skill →Capacité de Tir (CT)");
@@ -163,7 +139,7 @@ namespace AdeptusDicus.Modules
             {
                 int dice1 = DiceHelper.D10();
                 int dice2 = DiceHelper.D10();
-                sbCaract.Append($"2D10 + 20 : {dice1} + {dice2} + 20 → __{dice1+dice2+20}__");
+                sbCaract.Append($"2D10 + 20 : {dice1} + {dice2} + 20 → __{dice1+dice2+20}__{Environment.NewLine}");
                 sum += dice1 + dice2 + 20;
             }
             return new EmbedBuilder()
@@ -174,12 +150,12 @@ namespace AdeptusDicus.Modules
         }
 
         private EmbedBuilder OriginBuilder(Origin characterOrigin)
-        {
+        {                                    
             return new EmbedBuilder()
-                .WithTitle($"**Origine : {_originsTranslations[characterOrigin]}**")
-                .WithDescription($"{_originsBonus[characterOrigin]}")
-                .WithFields(new EmbedFieldBuilder().WithName("Équipement").WithValue($"*{_originsEquipement[characterOrigin]}*"))
-                .WithColor(Color.DarkPurple);
+                .WithTitle($"**Origine : {_originService.GetTranslation(characterOrigin)}**")
+                .WithDescription($"{_originService.GetBonus(characterOrigin)}")
+                .WithFields(new EmbedFieldBuilder().WithName("Équipement").WithValue($"*{_originService.GetEquipement(characterOrigin)}*"))
+                .WithColor(Color.DarkRed);
         }
 
         private EmbedBuilder FactionBuilder(Faction characterFaction)

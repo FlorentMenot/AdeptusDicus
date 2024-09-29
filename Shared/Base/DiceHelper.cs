@@ -5,7 +5,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AdeptusDicus
+namespace Shared.Base
 {
     public static class DiceHelper
     {
