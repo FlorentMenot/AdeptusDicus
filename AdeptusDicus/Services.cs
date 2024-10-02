@@ -16,6 +16,8 @@ namespace AdeptusDicus
         {
             collection.AddSingleton<IReferentiel<Caracteristic>, CaracteristicReferentiel>();
             collection.AddSingleton<IOriginReferentiel, OriginReferentiel>();
+            collection.AddSingleton<IReferentiel<Skill>, SkillReferentiel>();
+            collection.AddSingleton<IFactionReferentiel, FactionReferentiel>();
         }
 
     }
